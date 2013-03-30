@@ -1,0 +1,10 @@
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\bin\Debug\CBA_Client_ExchangeRatesByDateByISO.exe.config
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\bin\Debug\CBA_Client_ExchangeRatesByDateByISO.exe
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\bin\Debug\CBA_Client_ExchangeRatesByDateByISO.pdb
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\CBA_Client_ExchangeRatesByDateByISO.Form1.resources
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\CBA_Client_ExchangeRatesByDateByISO.Properties.Resources.resources
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\CBA_Client_ExchangeRatesByDateByISO.exe
+c:\.NET\c#\WSDL\CBA_Client_ExchangeRatesByDateByISO\CBA_Client_ExchangeRatesByDateByISO\obj\x86\Debug\CBA_Client_ExchangeRatesByDateByISO.pdb
