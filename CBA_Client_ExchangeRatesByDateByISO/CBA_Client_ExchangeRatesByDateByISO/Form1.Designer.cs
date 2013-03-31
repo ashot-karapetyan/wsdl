@@ -84,15 +84,16 @@ namespace CBA_Client_ExchangeRatesByDateByISO
             // 
             this.ratesTable.AllowUserToAddRows = false;
             this.ratesTable.AllowUserToDeleteRows = false;
+            this.ratesTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ratesTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ratesTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.Rate,
             this.Diff});
-            this.ratesTable.Location = new System.Drawing.Point(76, 106);
+            this.ratesTable.Location = new System.Drawing.Point(12, 106);
             this.ratesTable.Name = "ratesTable";
             this.ratesTable.ReadOnly = true;
-            this.ratesTable.Size = new System.Drawing.Size(290, 135);
+            this.ratesTable.Size = new System.Drawing.Size(476, 191);
             this.ratesTable.TabIndex = 4;
             // 
             // label1
@@ -130,7 +131,6 @@ namespace CBA_Client_ExchangeRatesByDateByISO
             this.Date.HeaderText = "Date";
             this.Date.Name = "Date";
             this.Date.ReadOnly = true;
-            this.Date.Width = 70;
             // 
             // Rate
             // 
@@ -143,7 +143,6 @@ namespace CBA_Client_ExchangeRatesByDateByISO
             this.Diff.HeaderText = "Diff";
             this.Diff.Name = "Diff";
             this.Diff.ReadOnly = true;
-            this.Diff.Width = 75;
             // 
             // Form1
             // 

@@ -20,7 +20,7 @@ namespace CBA_Client_ExchangeRatesByDateByISO
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-
+            this.ratesTable.Rows.Clear();
             this.renderTable();
             /*
             Thread thread = new Thread(new ThreadStart(this.renderTable));
@@ -47,10 +47,15 @@ namespace CBA_Client_ExchangeRatesByDateByISO
                 String iso = current.ISO;
                 decimal diff = current.Diff;
                 decimal rate = current.Rate;
-                String date = current.RateDate.ToString("dd/MM/yy");
+                String date = current.RateDate.ToString("yy/MM/dd");
                 this.ratesTable.Rows.Add(new String[] { date, rate.ToString(), diff.ToString() });
                 Color backColor = diff > 0 ? Color.Green : Color.Red;
-                this.ratesTable.Rows[rowIndex++].Cells[2].Style.BackColor = backColor;
+                this.ratesTable.Rows[rowIndex].Cells[2].Style.BackColor = backColor;
+                if(rowIndex %2 == 1){
+                    this.ratesTable.Rows[rowIndex].Cells[0].Style.BackColor = Color.Gray;
+                    this.ratesTable.Rows[rowIndex].Cells[1].Style.BackColor = Color.Gray;
+                }
+                rowIndex++;
             }
 
             this.selectedISO.Enabled = true;
