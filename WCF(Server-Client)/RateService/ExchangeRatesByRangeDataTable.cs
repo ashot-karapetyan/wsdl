@@ -22,6 +22,12 @@ namespace RateServiceDummy
             this.rows.Add(new ExchangeRatesByRangeDataTableRow(1,"USD",0.5m,450m,DateTime.Today));
         }
 
+        private void loadFromDb()
+        {
+            this.rows = new LinkedList<ExchangeRatesByRangeDataTableRow>();
+            this.rows.Add(DBHelper.getRatesInInterval());
+        }
+
         
         public IEnumerator<ExchangeRatesByRangeDataTableRow> GetEnumerator()
         {
