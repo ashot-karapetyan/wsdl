@@ -1,0 +1,10 @@
+c:\.NET\c#\WSDL\WCF(Server-Client)\WCF\bin\WCF.dll
+c:\.NET\c#\WSDL\WCF(Server-Client)\WCF\bin\WCF.pdb
+c:\.NET\c#\WSDL\WCF(Server-Client)\WCF\obj\Debug\ResolveAssemblyReference.cache
+c:\.NET\c#\WSDL\WCF(Server-Client)\WCF\obj\Debug\WCF.dll
+c:\.NET\c#\WSDL\WCF(Server-Client)\WCF\obj\Debug\WCF.pdb
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\bin\WCF.dll
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\bin\WCF.pdb
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\obj\Debug\ResolveAssemblyReference.cache
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\obj\Debug\WCF.dll
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\obj\Debug\WCF.pdb

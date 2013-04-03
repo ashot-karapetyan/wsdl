@@ -1,0 +1,10 @@
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\bin\WCF.dll
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\bin\WCF.pdb
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\obj\Debug\ResolveAssemblyReference.cache
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\obj\Debug\WCF.dll
+D:\NET_Projects\WCF\WCF(Server-Client)\WCF\obj\Debug\WCF.pdb
+D:\NET_Projects\WCF\WCF(Server-Client)\RateService\bin\WCF.dll
+D:\NET_Projects\WCF\WCF(Server-Client)\RateService\bin\WCF.pdb
+D:\NET_Projects\WCF\WCF(Server-Client)\RateService\obj\Debug\ResolveAssemblyReference.cache
+D:\NET_Projects\WCF\WCF(Server-Client)\RateService\obj\Debug\WCF.dll
+D:\NET_Projects\WCF\WCF(Server-Client)\RateService\obj\Debug\WCF.pdb

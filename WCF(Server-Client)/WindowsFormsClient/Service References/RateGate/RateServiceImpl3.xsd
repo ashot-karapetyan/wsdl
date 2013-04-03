@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/RateServiceDummy" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/RateServiceDummy" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ExchangeRatesByRangeDataTable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="rows" nillable="true" type="tns:ArrayOfExchangeRatesByRangeDataTableRow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangeRatesByRangeDataTable" nillable="true" type="tns:ExchangeRatesByRangeDataTable" />
+  <xs:complexType name="ArrayOfExchangeRatesByRangeDataTableRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExchangeRatesByRangeDataTableRow" nillable="true" type="tns:ExchangeRatesByRangeDataTableRow" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExchangeRatesByRangeDataTableRow" nillable="true" type="tns:ArrayOfExchangeRatesByRangeDataTableRow" />
+  <xs:complexType name="ExchangeRatesByRangeDataTableRow">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ammount" type="xs:int" />
+      <xs:element minOccurs="0" name="Diff" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ISO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="RateDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangeRatesByRangeDataTableRow" nillable="true" type="tns:ExchangeRatesByRangeDataTableRow" />
+</xs:schema>

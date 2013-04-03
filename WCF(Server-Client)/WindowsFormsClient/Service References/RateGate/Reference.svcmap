@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="222db562-1da2-44a1-92e2-9a47d7d428b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/RateServiceImpl.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RateServiceImpl.xsd" MetadataType="Schema" ID="b812556e-5c56-4147-a59b-033636e4c3ff" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?xsd=xsd0" />
+    <MetadataFile FileName="RateServiceImpl1.xsd" MetadataType="Schema" ID="7e58b563-bdfb-434f-8e76-61c650a7ac03" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?xsd=xsd1" />
+    <MetadataFile FileName="RateServiceImpl.wsdl" MetadataType="Wsdl" ID="b67d5259-6b65-4839-9bd1-2d0e9e6fe205" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?wsdl" />
+    <MetadataFile FileName="RateServiceImpl2.xsd" MetadataType="Schema" ID="cd0d6d21-416c-4906-83c0-9a4ec808a882" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?xsd=xsd3" />
+    <MetadataFile FileName="RateServiceImpl1.wsdl" MetadataType="Wsdl" ID="40266af1-a27f-4437-9e30-f948a548796c" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="RateServiceImpl.disco" MetadataType="Disco" ID="b038aa97-1b2f-417a-91fc-3898f692263e" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?disco" />
+    <MetadataFile FileName="RateServiceImpl3.xsd" MetadataType="Schema" ID="dd07a0ec-f21a-4da3-a302-cce4a32e6d30" SourceId="1" SourceUrl="http://localhost:8080/RateServiceImpl.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
