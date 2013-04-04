@@ -16,3 +16,13 @@ D:\NET_Projects\WCF\WCF(Server-Client)\WindowsFormsClient\bin\Debug\WindowsForms
 D:\NET_Projects\WCF\WCF(Server-Client)\WindowsFormsClient\bin\Debug\WindowsFormsClient.pdb
 D:\NET_Projects\WCF\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\WindowsFormsClient.exe
 D:\NET_Projects\WCF\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\WindowsFormsClient.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\bin\Debug\WindowsFormsClient.exe.config
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\bin\Debug\WindowsFormsClient.exe
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\bin\Debug\WindowsFormsClient.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\WindowsFormsClient.Properties.Resources.resources
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\WindowsFormsClient.exe
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\WindowsFormsClient.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\WindowsFormsClient\obj\x86\Debug\WindowsFormsClient.Form1.resources

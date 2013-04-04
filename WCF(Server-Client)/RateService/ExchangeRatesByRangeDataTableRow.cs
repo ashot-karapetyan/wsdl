@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 namespace RateServiceDummy
 {
-
+    [Serializable]
     [DataContract]
     public class ExchangeRatesByRangeDataTableRow
     {

@@ -8,3 +8,11 @@ D:\NET_Projects\WCF\WCF(Server-Client)\RateService\bin\WCF.pdb
 D:\NET_Projects\WCF\WCF(Server-Client)\RateService\obj\Debug\ResolveAssemblyReference.cache
 D:\NET_Projects\WCF\WCF(Server-Client)\RateService\obj\Debug\WCF.dll
 D:\NET_Projects\WCF\WCF(Server-Client)\RateService\obj\Debug\WCF.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\obj\Debug\ResolveAssemblyReference.cache
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\obj\Debug\WCF.dll
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\bin\WCF.dll
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\bin\WCF.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\obj\Debug\WCF.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\obj\Debug\RateServiceDummy.RatesDummy.resources
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\obj\Debug\GenerateResource.read.1.tlog
+C:\.Net\c#\WSDL\WCF(Server-Client)\RateService\obj\Debug\GenerateResource.write.1.tlog

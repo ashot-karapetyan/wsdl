@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Data.Odbc;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using System.Resources;
+using System.Configuration;
 
 
 namespace RateServiceDummy
@@ -12,34 +17,63 @@ namespace RateServiceDummy
     {
         private static SqlConnection getConnection()
         {
-            return new SqlConnection("user id=idm3;" +
-                                      "password=idm3;server=ashot-hp;" +
-                                      "Trusted_Connection=yes;" +
-                                      "database=RateDB; " +
-                                      "connection timeout=30");
+            var connectionURL  = ConfigurationManager.ConnectionStrings["CharityManagement"].ConnectionString;
+            return new SqlConnection(connectionURL);
         }
 
 
-        public ICollection<ExchangeRatesByRangeDataTableRow> getRatesInInterval()
+        public static ICollection<ExchangeRatesByRangeDataTableRow> getRatesInInterval(String iso, DateTime from, DateTime to)
         {
-             ICollection<ExchangeRatesByRangeDataTableRow> rows  = new LinkedList<ExchangeRatesByRangeDataTableRow>();
+            LinkedList<ExchangeRatesByRangeDataTableRow> rows = new LinkedList<ExchangeRatesByRangeDataTableRow>();
             using (SqlConnection innerConnection = getConnection())
             {
-                String query = @"select ISO, Diff,Rate,Date from Rate where "
                 innerConnection.Open();
-                SqlCommand joinCommand = new SqlCommand(query, innerConnection);
-                OdbcCommand cmd = innerConnection.CreateCommand();
-                using (SqlDataReader resultSet = joinCommand.ExecuteReader())
+                SqlCommand selectCommand = innerConnection.CreateCommand();
+                selectCommand.CommandText = @"select Ammount, D.Date
+                                                from dbo.Rate R join
+					                                                (
+					                                                select CurrencyId,CurrencyName
+					                                                from Currency
+					                                                where CurrencyName = '"+iso+@"') C  on R.CurrencyId = C.CurrencyId join 
+                                                (
+	                                                select [Date],[DateId]
+	                                                from [Date]
+	                                                where Date.Date   BETWEEN '" + from.ToString("yyyy-MM-dd") + @"' AND '" + to.ToString("yyyy-MM-dd") + @"' ) D on R.DateId = D.DateId ";
+           
+                using (SqlDataReader resultSet = selectCommand.ExecuteReader())
                 {
-                    while (resultSet.Read())
+
+                    if (resultSet.Read())
                     {
-                        new ExchangeRatesByRangeDataTableRow(1, "USD", 0.5m, 450m, DateTime.Today);
+                        decimal prevAmount = (decimal)resultSet["Ammount"];
+                        decimal currentAmmount = (decimal)resultSet["Ammount"];
+                        rows.AddFirst(new ExchangeRatesByRangeDataTableRow(1, iso, 0, currentAmmount, (DateTime)resultSet["Date"]));
+                        while (resultSet.Read())
+                        {
+                            currentAmmount = (decimal)resultSet["Ammount"];
+                            rows.AddFirst(new ExchangeRatesByRangeDataTableRow(1, iso, currentAmmount - prevAmount, currentAmmount, (DateTime)resultSet["Date"]));
+                            prevAmount = currentAmmount;
+
+                        }
                     }
                 }
             }
-
-
+          //  DummyLoader.Serialize(iso,rows); 
             return rows; 
+        }
+
+
+        public static bool isDBAvailable()
+        {
+            try
+            {
+               SqlConnection conn =  getConnection();
+               conn.Open();
+               return true;
+            }catch(Exception e){
+                return false;
+            }
+
         }
 
     }

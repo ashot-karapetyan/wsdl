@@ -12,12 +12,12 @@ namespace RateServiceDummy
     {
         public ExchangeRatesByRangeDataTable ExchangeRatesByDateRangeByISO(string iso, DateTime from, DateTime to)
         {
-            return new ExchangeRatesByRangeDataTable();
+            return new ExchangeRatesByRangeDataTable().getData(iso, from, to);
         }
 
         public string[] ISOCodes()
         {
-            return new String[] { "USD", "EUR", "ruble" };
+            return new String[] { "USD", "EUR", "rubl" };
         }
 
 

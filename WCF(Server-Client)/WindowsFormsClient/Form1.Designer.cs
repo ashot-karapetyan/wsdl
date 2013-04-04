@@ -34,12 +34,12 @@ namespace WindowsFormsClient
             this.toDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.submitButton = new System.Windows.Forms.Button();
             this.ratesTable = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Diff = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ratesTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,18 +57,24 @@ namespace WindowsFormsClient
             this.fromDateTimePicker.CustomFormat = "dddd dd MMM yyyy";
             this.fromDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fromDateTimePicker.Location = new System.Drawing.Point(94, 37);
+            this.fromDateTimePicker.MaxDate = new System.DateTime(2012, 12, 31, 0, 0, 0, 0);
+            this.fromDateTimePicker.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
             this.fromDateTimePicker.Name = "fromDateTimePicker";
             this.fromDateTimePicker.Size = new System.Drawing.Size(186, 20);
             this.fromDateTimePicker.TabIndex = 1;
+            this.fromDateTimePicker.Value = new System.DateTime(2012, 12, 31, 0, 0, 0, 0);
             // 
             // toDateTimePicker
             // 
             this.toDateTimePicker.CustomFormat = "dddd dd MMM yyyy";
             this.toDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.toDateTimePicker.Location = new System.Drawing.Point(302, 38);
+            this.toDateTimePicker.MaxDate = new System.DateTime(2012, 12, 31, 0, 0, 0, 0);
+            this.toDateTimePicker.MinDate = new System.DateTime(2010, 1, 1, 0, 0, 0, 0);
             this.toDateTimePicker.Name = "toDateTimePicker";
             this.toDateTimePicker.Size = new System.Drawing.Size(186, 20);
             this.toDateTimePicker.TabIndex = 2;
+            this.toDateTimePicker.Value = new System.DateTime(2012, 12, 31, 0, 0, 0, 0);
             // 
             // submitButton
             // 
@@ -95,6 +101,24 @@ namespace WindowsFormsClient
             this.ratesTable.ReadOnly = true;
             this.ratesTable.Size = new System.Drawing.Size(476, 191);
             this.ratesTable.TabIndex = 4;
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            this.Date.ReadOnly = true;
+            // 
+            // Rate
+            // 
+            this.Rate.HeaderText = "Rate";
+            this.Rate.Name = "Rate";
+            this.Rate.ReadOnly = true;
+            // 
+            // Diff
+            // 
+            this.Diff.HeaderText = "Diff";
+            this.Diff.Name = "Diff";
+            this.Diff.ReadOnly = true;
             // 
             // label1
             // 
@@ -125,24 +149,6 @@ namespace WindowsFormsClient
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Date To";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            this.Date.ReadOnly = true;
-            // 
-            // Rate
-            // 
-            this.Rate.HeaderText = "Rate";
-            this.Rate.Name = "Rate";
-            this.Rate.ReadOnly = true;
-            // 
-            // Diff
-            // 
-            this.Diff.HeaderText = "Diff";
-            this.Diff.Name = "Diff";
-            this.Diff.ReadOnly = true;
             // 
             // Form1
             // 

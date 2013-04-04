@@ -13,25 +13,45 @@ namespace RateServiceDummy
         public ICollection<ExchangeRatesByRangeDataTableRow> rows{get;set;}
         public ExchangeRatesByRangeDataTable()
         {
-            createDummyData();
+            this.rows = new LinkedList<ExchangeRatesByRangeDataTableRow>();
         }
 
-        private void createDummyData()
+        private void createDummyData(String iso, DateTime from, DateTime to)
         {
-            this.rows = new LinkedList<ExchangeRatesByRangeDataTableRow>();
-            this.rows.Add(new ExchangeRatesByRangeDataTableRow(1,"USD",0.5m,450m,DateTime.Today));
+            ICollection<ExchangeRatesByRangeDataTableRow> draftList = DummyLoader.Deserialize(iso);
+            foreach(ExchangeRatesByRangeDataTableRow x in draftList){
+                if(x.RateDate<=to && x.RateDate >= from){
+                    this.rows.Add(x);
+                }
+            }
+            this.rows.Reverse();
         }
 
-        private void loadFromDb()
+        private void loadFromDb(String iso, DateTime from, DateTime to)
         {
-            this.rows = new LinkedList<ExchangeRatesByRangeDataTableRow>();
-            this.rows.Add(DBHelper.getRatesInInterval());
+            this.rows = new LinkedList<ExchangeRatesByRangeDataTableRow>(DBHelper.getRatesInInterval(iso, from, to));
+           // this.rows.Add(DBHelper.getRatesInInterval(iso, from, to));
         }
 
         
         public IEnumerator<ExchangeRatesByRangeDataTableRow> GetEnumerator()
         {
             return this.rows.GetEnumerator();
+        }
+
+        internal ExchangeRatesByRangeDataTable getData(string iso, DateTime from, DateTime to)
+        {
+            if (DBHelper.isDBAvailable())
+            {
+                loadFromDb(iso, from, to);
+            }
+            else
+            {
+                createDummyData(iso, from, to);
+            }
+            
+            
+            return this;
         }
     }
 

@@ -1,0 +1,9 @@
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\obj\x86\Debug\Interop.SERVICELAYERLib.dll
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\obj\x86\Debug\StrarterProject.csproj.ResolveComReference.cache
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\bin\Debug\StrarterProject.exe
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\bin\Debug\StrarterProject.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\bin\Debug\WCF.dll
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\bin\Debug\WCF.pdb
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\obj\x86\Debug\StrarterProject.exe
+C:\.Net\c#\WSDL\WCF(Server-Client)\StrarterProject\obj\x86\Debug\StrarterProject.pdb
